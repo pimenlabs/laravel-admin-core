@@ -1,11 +1,12 @@
 <?php
 
-namespace BalajiDharma\LaravelAdminCore\Requests;
+namespace BalajiDharma\LaravelAdminCore\Requests\User;
 
+use BalajiDharma\LaravelAdminCore\Data\User\UserData;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules;
 
-class UpdateUserRequest extends FormRequest
+class StoreUserRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,8 +27,13 @@ class UpdateUserRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email,'.$this->user->id],
-            'password' => ['nullable', 'confirmed', Rules\Password::defaults()],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ];
+    }
+
+    public function getUserData(): UserData
+    {
+        return UserData::from($this);
     }
 }

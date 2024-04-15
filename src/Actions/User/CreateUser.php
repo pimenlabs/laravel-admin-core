@@ -3,11 +3,12 @@
 namespace BalajiDharma\LaravelAdminCore\Actions\User;
 
 use App\Models\User;
+use BalajiDharma\LaravelAdminCore\Data\User\UserData;
 use Illuminate\Support\Facades\Hash;
 
 class CreateUser
 {
-    public function handle($data): User
+    public function handle(UserData $data): User
     {
         $user = User::create([
             'name' => $data->name,
@@ -16,7 +17,7 @@ class CreateUser
         ]);
 
         $roles = $data->roles ?? [];
-        $user->assignRole(array_map('intval', $roles));
+        $user->assignRole();
 
         return $user;
     }

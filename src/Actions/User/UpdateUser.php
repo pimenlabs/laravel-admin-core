@@ -3,11 +3,12 @@
 namespace BalajiDharma\LaravelAdminCore\Actions\User;
 
 use App\Models\User;
+use BalajiDharma\LaravelAdminCore\Data\User\UserData;
 use Illuminate\Support\Facades\Hash;
 
 class UpdateUser
 {
-    public function handle($data, User $user): User
+    public function handle(UserData $data, User $user): User
     {
         $user->update([
             'name' => $data->name,
@@ -21,7 +22,7 @@ class UpdateUser
         }
 
         $roles = $data->roles ?? [];
-        $user->syncRoles(array_map('intval', $roles));
+        $user->syncRoles();
 
         return $user;
     }
