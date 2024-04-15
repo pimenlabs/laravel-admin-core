@@ -22,7 +22,7 @@ class UpdateUser
         }
 
         $roles = $data->roles ?? [];
-        $user->syncRoles();
+        $user->syncRoles($roles);
 
         return $user;
     }
