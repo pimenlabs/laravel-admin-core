@@ -21,7 +21,7 @@ class UpdateUser
         }
 
         $roles = $data->roles ?? [];
-        $user->syncRoles($roles);
+        $user->syncRoles(array_map('intval', $roles));
 
         return $user;
     }

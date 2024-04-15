@@ -16,7 +16,7 @@ class CreateUser
         ]);
 
         $roles = $data->roles ?? [];
-        $user->assignRole($roles);
+        $user->assignRole(array_map('intval', $roles));
 
         return $user;
     }
