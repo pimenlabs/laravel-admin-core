@@ -23,6 +23,7 @@ class AdminCoreSeeder extends Seeder
 
         // create permissions
         $permissions = [
+            'admin user',
             'permission list',
             'permission create',
             'permission edit',
@@ -59,6 +60,7 @@ class AdminCoreSeeder extends Seeder
 
         // create roles and assign existing permissions
         $role1 = Role::create(['name' => 'writer']);
+        $role1->givePermissionTo('admin user');
         $role1->givePermissionTo('permission list');
         $role1->givePermissionTo('role list');
         $role1->givePermissionTo('user list');
