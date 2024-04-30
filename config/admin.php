@@ -36,6 +36,20 @@ return [
     |
     */
     'roles' => [
-        'super_admin' => env('APP_SUPER_ADMIN', 'super-admin'),
-    ]
+        'super_admin' => env('APP_ROLE_SUPER_ADMIN', 'super-admin'),
+    ],
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Admin Permission Settings
+    |--------------------------------------------------------------------------
+    |
+    | Admin User default permission name to access admin pages.
+    | You can override the value by setting new permission name.
+    |
+    */
+    'permission' => [
+        'access_admin' => env('APP_PERMISSION_ACCESS_ADMIN', 'admin user'),
+    ],
 ];
