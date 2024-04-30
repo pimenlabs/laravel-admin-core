@@ -25,4 +25,17 @@ return [
         'per_page' => 10,
         'each_side' => 2,
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Admin Roles Settings
+    |--------------------------------------------------------------------------
+    |
+    | Super Admin default role name is "super-admin".
+    | You can override the value by setting new role name.
+    |
+    */
+    'roles' => [
+        'super_admin' => env('APP_SUPER_ADMIN', 'super-admin'),
+    ]
 ];
