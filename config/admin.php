@@ -39,7 +39,6 @@ return [
         'super_admin' => env('APP_ROLE_SUPER_ADMIN', 'super-admin'),
     ],
 
-
     /*
     |--------------------------------------------------------------------------
     | Admin Permission Settings

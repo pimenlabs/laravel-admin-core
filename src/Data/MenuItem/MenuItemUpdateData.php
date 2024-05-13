@@ -11,9 +11,9 @@ class MenuItemUpdateData extends Data
         public string $name,
         public string $uri,
         public ?string $description,
-        public ?bool $enabled = false,
+        public ?bool $enabled,
         public ?int $parent_id,
-        public ?int $weight = 0,
+        public ?int $weight,
         public ?string $icon,
         public ?array $roles = [],
     ) {

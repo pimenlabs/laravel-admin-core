@@ -10,7 +10,7 @@ class PermissionCreateAction
     public function handle(PermissionCreateData $data): Permission
     {
         return Permission::create([
-            'name' => $data->getName()
+            'name' => $data->getName(),
         ]);
     }
 }

@@ -2,10 +2,10 @@
 
 namespace BalajiDharma\LaravelAdminCore\Data\User;
 
-use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Support\Validation\ValidationContext;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use Spatie\LaravelData\Data;
+use Spatie\LaravelData\Support\Validation\ValidationContext;
 
 class UserUpdateData extends Data
 {

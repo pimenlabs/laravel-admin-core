@@ -13,7 +13,6 @@ class CategoryPolicy
     /**
      * Determine whether the user can view any categorys.
      *
-     * @param  User  $user
      * @return mixed
      */
     public function adminViewAny(User $user)
@@ -24,8 +23,6 @@ class CategoryPolicy
     /**
      * Determine whether the user can view a specific category.
      *
-     * @param  User  $user
-     * @param  Category  $category
      * @return mixed
      */
     public function adminView(User $user, Category $category)
@@ -36,7 +33,6 @@ class CategoryPolicy
     /**
      * Determine whether the user can create categorys.
      *
-     * @param  User  $user
      * @return mixed
      */
     public function adminCreate(User $user)
@@ -47,8 +43,6 @@ class CategoryPolicy
     /**
      * Determine whether the user can update a specific category.
      *
-     * @param  User  $user
-     * @param  Category  $category
      * @return mixed
      */
     public function adminUpdate(User $user, Category $category)
@@ -59,8 +53,6 @@ class CategoryPolicy
     /**
      * Determine whether the user can delete a specific category.
      *
-     * @param  User  $user
-     * @param  Category  $category
      * @return mixed
      */
     public function adminDelete(User $user, Category $category)

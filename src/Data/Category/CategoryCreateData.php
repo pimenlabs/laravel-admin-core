@@ -11,7 +11,7 @@ class CategoryCreateData extends Data
         public string $name,
         public ?string $slug,
         public ?string $description,
-        public ?bool $enabled = false,
+        public ?bool $enabled,
         public ?int $parentId,
         public ?int $weight = 0,
     ) {

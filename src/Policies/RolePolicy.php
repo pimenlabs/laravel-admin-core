@@ -13,7 +13,6 @@ class RolePolicy
     /**
      * Determine whether the user can view any roles.
      *
-     * @param  User  $user
      * @return mixed
      */
     public function adminViewAny(User $user)
@@ -24,8 +23,6 @@ class RolePolicy
     /**
      * Determine whether the user can view a specific role.
      *
-     * @param  User  $user
-     * @param  Role  $role
      * @return mixed
      */
     public function adminView(User $user, Role $role)
@@ -36,7 +33,6 @@ class RolePolicy
     /**
      * Determine whether the user can create roles.
      *
-     * @param  User  $user
      * @return mixed
      */
     public function adminCreate(User $user)
@@ -47,8 +43,6 @@ class RolePolicy
     /**
      * Determine whether the user can update a specific role.
      *
-     * @param  User  $user
-     * @param  Role  $role
      * @return mixed
      */
     public function adminUpdate(User $user, Role $role)
@@ -59,8 +53,6 @@ class RolePolicy
     /**
      * Determine whether the user can delete a specific role.
      *
-     * @param  User  $user
-     * @param  Role  $role
      * @return mixed
      */
     public function adminDelete(User $user, Role $role)

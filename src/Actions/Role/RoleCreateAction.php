@@ -10,7 +10,7 @@ class RoleCreateAction
     public function handle(RoleCreateData $data): Role
     {
         $role = Role::create([
-            'name' => $data->getName()
+            'name' => $data->getName(),
         ]);
 
         if (! empty($data->getPermissions())) {

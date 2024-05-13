@@ -10,7 +10,7 @@ class PermissionUpdateAction
     public function handle(PermissionUpdateData $data, Permission $permission): bool
     {
         return $permission->update([
-            'name' => $data->getName()
+            'name' => $data->getName(),
         ]);
     }
 }
