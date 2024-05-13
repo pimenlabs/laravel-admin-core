@@ -5,7 +5,7 @@ namespace BalajiDharma\LaravelAdminCore\Actions\User;
 use App\Models\User;
 use BalajiDharma\LaravelAdminCore\Data\User\UserCreateData;
 
-class CreateUser
+class UserCreateAction
 {
     public function handle(UserCreateData $data): User
     {

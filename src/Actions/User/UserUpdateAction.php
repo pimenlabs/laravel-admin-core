@@ -5,7 +5,7 @@ namespace BalajiDharma\LaravelAdminCore\Actions\User;
 use App\Models\User;
 use BalajiDharma\LaravelAdminCore\Data\User\UserUpdateData;
 
-class UpdateUser
+class UserUpdateAction
 {
     public function handle(UserUpdateData $data, User $user): User
     {
