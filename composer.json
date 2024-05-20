@@ -13,7 +13,8 @@
         "spatie/laravel-data":"^4.5",
         "spatie/laravel-permission": "^6.4",
         "balajidharma/laravel-menu": "^2.0",
-        "balajidharma/laravel-category": "^2.0"
+        "balajidharma/laravel-category": "^2.0",
+        "balajidharma/laravel-media-manager": "^1.0"
     },
     "autoload": {
         "psr-4": {
