@@ -9,7 +9,7 @@ use Plank\Mediable\Media;
 class MediaUpdateAction
 {
     protected MediaManager $mediaManager;
-    
+
     public function __construct(MediaManager $mediaManager)
     {
         $this->mediaManager = $mediaManager;

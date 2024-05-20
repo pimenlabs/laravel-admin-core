@@ -2,9 +2,9 @@
 
 namespace BalajiDharma\LaravelAdminCore\Data\Media;
 
+use Illuminate\Http\UploadedFile;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Support\Validation\ValidationContext;
-use Illuminate\Http\UploadedFile;
 
 class MediaUpdateData extends Data
 {

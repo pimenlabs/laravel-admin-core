@@ -8,7 +8,7 @@ use BalajiDharma\LaravelMediaManager\MediaManager;
 class MediaCreateAction
 {
     protected MediaManager $mediaManager;
-    
+
     public function __construct(MediaManager $mediaManager)
     {
         $this->mediaManager = $mediaManager;
