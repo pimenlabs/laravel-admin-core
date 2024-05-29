@@ -72,6 +72,7 @@ class AdminCoreSeeder extends Seeder
         $role1->givePermissionTo('menu.item list');
         $role1->givePermissionTo('category list');
         $role1->givePermissionTo('category.type list');
+        $role1->givePermissionTo('media list');
 
         $role2 = Role::create(['name' => 'admin']);
         foreach ($permissions as $permission) {
